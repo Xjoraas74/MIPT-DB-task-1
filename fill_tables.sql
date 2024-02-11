@@ -1,0 +1,43 @@
+INSERT INTO address (address, postcode, state, country) VALUES ('060 Morning Avenue', 2016, 'New South Wales', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('6 Meadow Vale Court', 2153, 'New South Wales', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('0 Holy Cross Court', 4211, 'QLD', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('17979 Del Mar Point', 2448, 'New South Wales', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('9 Oakridge Court', 3216, 'VIC', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('4 Delaware Trail', 2210, 'New South Wales', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('49 Londonderry Lane', 2650, 'New South Wales', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('97736 7th Trail', 2023, 'New South Wales', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('93405 Ludington Park', 3044, 'VIC', 'Australia');
+INSERT INTO address (address, postcode, state, country) VALUES ('44339 Golden Leaf Alley', 4557, 'QLD', 'Australia');
+
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Laraine', 'Medendorp', 'F', '1953-10-12', 'Executive Secretary', 'Health', 'Mass Customer', false, true, 1, 10);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Eli', 'Bockman', 'Male', '1980-12-16', 'Administrative Officer', 'Financial Services', 'Mass Customer', false, true, 2, 10);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Arlin', 'Dearle', 'Male', '1954-01-20', 'Recruiting Manager', 'Property', 'Mass Customer', false, true, 3, 9);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Talbot', null, 'Male', '1961-10-03', null, 'IT', 'Mass Customer', false, false, 4, 4);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Sheila-kathryn', 'Calton', 'Female', '1977-05-13', 'Senior Editor', null, 'Affluent Customer', false, true, 5, 9);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Curr', 'Duckhouse', 'Male', '1966-09-16', null, 'Retail', 'High Net Worth', false, true, 6, 9);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Fina', 'Merali', 'Female', '1976-02-23', null, 'Financial Services', 'Affluent Customer', false, true, 7, 4);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Rod', 'Inder', 'Male', '1962-03-30', 'Media Manager I', null, 'Mass Customer', false, false, 8, 12);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Mala', 'Lind', 'Female', '1973-03-10', 'Business Systems Development Analyst', 'Argiculture', 'Affluent Customer', false, true, 9, 8);
+insert into customer (first_name, last_name, gender, "DOB", job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, address_id, property_valuation) values ('Fiorenze', 'Birdall', 'Female', '1988-10-11', 'Senior Quality Engineer', 'Financial Services', 'Mass Customer', false, true, 10, 4);
+
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (2, 'Solex', 'Standard', 'medium', 'medium', '53.62');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (3, 'Trek Bicycles', 'Standard', 'medium', 'large', '388.92');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (37, 'OHM Cycles', 'Standard', 'low', 'medium', '248.82');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (88, 'Norco Bicycles', 'Standard', 'medium', 'medium', '381.10');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (78, 'Giant Bicycles', 'Standard', 'medium', 'large', '709.48');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (25, 'Giant Bicycles', 'Road', 'medium', 'medium', '829.65');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (22, 'WeareA2B', 'Standard', 'medium', 'medium', '45.26');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (15, 'WeareA2B', 'Standard', 'medium', 'medium', '13.44');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (67, 'Solex', 'Standard', 'medium', 'large', '380.74');
+insert into product (product_id, brand, product_line, product_class, product_size, standard_cost) values (12, 'WeareA2B', 'Standard', 'medium', 'medium', '161.60');
+
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (1, 1, '2/25/2017', False, true, '71.49');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (2, 2, '5/21/2017', True, true, '2091.47');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (3, 3, '10/16/2017', False, true, '1793.43');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (4, 4, '8/31/2017', False, true, '1198.46');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (5, 5, '10/1/2017', True, true, '1765.3');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (6, 6, '3/8/2017', True, true, '1538.99');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (7, 7, '4/21/2017', True, true, '60.34');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (8, 8, '7/15/2017', False, true, '1292.84');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (9, 9, '8/10/2017', False, true, '1071.23');
+insert into "transaction" (product_id, customer_id, transaction_date, online_order, order_status, list_price) values (10, 10, '8/30/2017', True, true, '1231.15');
